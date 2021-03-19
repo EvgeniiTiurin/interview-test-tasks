@@ -2,7 +2,7 @@
  * Array based storage for Resumes
  *
  * @author EvgeniiTiurin
- * @version 0.1
+ * @version 1.0
  */
 
 package com.gridnine.testing;
