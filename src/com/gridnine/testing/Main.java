@@ -1,5 +1,5 @@
 /**
- * Array based storage for Resumes
+ * Flights and mistakes
  *
  * @author EvgeniiTiurin
  * @version 1.0
@@ -26,7 +26,7 @@ public class Main {
         flightsTwoHoursGroundTime = new ArrayList<>();
 
         List<Flight> testflights = FlightBuilder.createFlights();   // создание тестового набора перелётов
-        checkFlight(testflights);                                   // выдает результат обработки набора
+        checkFlight(testflights);                                   // результат обработки набора
     }
 
     static void checkFlight(List<Flight> flights) {
@@ -54,6 +54,10 @@ public class Main {
         showAllFlights();
     }
 
+    /*
+     * Здесь начинаются проверки согласно ТЗ
+     */
+
     static boolean checkFlightDepartingInThePast(Segment segment) {
         if (segment.getDepartureDate().isBefore(LocalDateTime.now())) {
             return true;
@@ -80,6 +84,10 @@ public class Main {
         }
         return false;
     }
+
+    /*
+     * Ниже происходит вывод списка рейсов, после проверки на длину списка
+     */
 
     static void showAllFlights() {
         if (approvedFlights.size() > 0) {
