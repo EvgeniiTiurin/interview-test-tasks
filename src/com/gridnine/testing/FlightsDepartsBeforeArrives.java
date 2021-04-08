@@ -5,6 +5,7 @@ import java.util.List;
 
 public class FlightsDepartsBeforeArrives extends AbstractFlightsList {
     List<Flight> flightsDepartsBeforeArrives = flightsList;
+
     @Override
     public void showFlight() {
         if (flightsDepartsBeforeArrives.size() > 0) {

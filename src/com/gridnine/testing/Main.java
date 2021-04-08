@@ -47,10 +47,6 @@ public class Main {
         showAllFlights();
     }
 
-    /*
-     * Ниже происходит вывод списка рейсов, после проверки на длину списка
-     */
-
     static void showAllFlights() {
         approvedFlights.showFlight();
         flightsTwoHoursGroundTime.showFlight();
